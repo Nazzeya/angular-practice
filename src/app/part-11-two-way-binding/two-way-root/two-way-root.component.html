@@ -1,0 +1,6 @@
+<!--
+<app-sizer [(size)]="fontSizepx"></app-sizer>
+<div [style.font-size.px]="fontSizepx">Resizeble text</div>
+-->
+
+<app-sizer [size]=" fontSizepx" (sizeChange)="fontSizepx"></app-sizer>

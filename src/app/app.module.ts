@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,13 @@ import { PropertyBindingRootComponent } from './part-8-property-binding/property
 import { ClassBindingRootComponent } from './part-9-class-binding/class-binding-root/class-binding-root.component';
 import { EventBindingRootComponent } from './part-10-event-binding/event-binding-root/event-binding-root.component';
 import { ItemDetailsComponent } from './part-10-event-binding/item-details/item-details.component';
+import { AppSizerComponent } from './part-11-two-way-binding/app-sizer/app-sizer.component';
+import { TwoWayRootComponent } from './part-11-two-way-binding/two-way-root/two-way-root.component';
+import { TVRootComponent } from './part-12-template-variables/t-v-root/t-v-root.component';
+import { DirectivesRootComponent } from './part-13-directives/directives-root/directives-root.component';
+import { HighlightDirective } from './part-14-attribute-directives/highlight.directive';
+import { ADRootComponent } from './part-14-attribute-directives/a-d-root/a-d-root.component';
+import { SDRootComponent } from './part-15-structural-directives/s-d-root/s-d-root.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +45,19 @@ import { ItemDetailsComponent } from './part-10-event-binding/item-details/item-
     GreetingsPipePipe,
     PropertyBindingRootComponent,
     EventBindingRootComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    AppSizerComponent,
+    TwoWayRootComponent,
+    TVRootComponent,
+    DirectivesRootComponent,
+    HighlightDirective,
+    ADRootComponent,
+    SDRootComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
