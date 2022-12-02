@@ -36,6 +36,7 @@ import { ChildAComponent } from './part-17-routing/child-a/child-a.component';
 import { ChildBComponent } from './part-17-routing/child-b/child-b.component';
 import { TDFRootComponent } from './part-18-template-driven-form/t-d-f-root/t-d-f-root.component';
 import { RFRootComponent } from './part-19-reactive-forms/r-f-root/r-f-root.component';
+import { FormValRootComponent } from './part-20-form-validation/form-val-root/form-val-root.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { RFRootComponent } from './part-19-reactive-forms/r-f-root/r-f-root.comp
     ChildAComponent,
     ChildBComponent,
     TDFRootComponent,
-    RFRootComponent
+    RFRootComponent,
+    FormValRootComponent
   ],
   imports: [
     BrowserModule,
