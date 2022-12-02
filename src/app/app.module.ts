@@ -27,6 +27,13 @@ import { DirectivesRootComponent } from './part-13-directives/directives-root/di
 import { HighlightDirective } from './part-14-attribute-directives/highlight.directive';
 import { ADRootComponent } from './part-14-attribute-directives/a-d-root/a-d-root.component';
 import { SDRootComponent } from './part-15-structural-directives/s-d-root/s-d-root.component';
+import { DiRootComponent } from './part-16-di/di-root/di-root.component';
+import { LogService } from './part-16-di/log.service';
+import { RoutingRootComponent } from './part-17-routing/routing-root/routing-root.component';
+import { FirstRoutingComponentComponent } from './part-17-routing/first-routing-component/first-routing-component.component';
+import { SecondRoutingComponentComponent } from './part-17-routing/second-routing-component/second-routing-component.component';
+import { ChildAComponent } from './part-17-routing/child-a/child-a.component';
+import { ChildBComponent } from './part-17-routing/child-b/child-b.component';
 
 @NgModule({
   declarations: [
@@ -52,14 +59,20 @@ import { SDRootComponent } from './part-15-structural-directives/s-d-root/s-d-ro
     DirectivesRootComponent,
     HighlightDirective,
     ADRootComponent,
-    SDRootComponent
+    SDRootComponent,
+    DiRootComponent,
+    RoutingRootComponent,
+    FirstRoutingComponentComponent,
+    SecondRoutingComponentComponent,
+    ChildAComponent,
+    ChildBComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
