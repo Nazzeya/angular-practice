@@ -34,6 +34,7 @@ import { FirstRoutingComponentComponent } from './part-17-routing/first-routing-
 import { SecondRoutingComponentComponent } from './part-17-routing/second-routing-component/second-routing-component.component';
 import { ChildAComponent } from './part-17-routing/child-a/child-a.component';
 import { ChildBComponent } from './part-17-routing/child-b/child-b.component';
+import { TDFRootComponent } from './part-18-template-driven-form/t-d-f-root/t-d-f-root.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { ChildBComponent } from './part-17-routing/child-b/child-b.component';
     FirstRoutingComponentComponent,
     SecondRoutingComponentComponent,
     ChildAComponent,
-    ChildBComponent
+    ChildBComponent,
+    TDFRootComponent
   ],
   imports: [
     BrowserModule,
