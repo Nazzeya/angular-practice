@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +35,7 @@ import { SecondRoutingComponentComponent } from './part-17-routing/second-routin
 import { ChildAComponent } from './part-17-routing/child-a/child-a.component';
 import { ChildBComponent } from './part-17-routing/child-b/child-b.component';
 import { TDFRootComponent } from './part-18-template-driven-form/t-d-f-root/t-d-f-root.component';
+import { RFRootComponent } from './part-19-reactive-forms/r-f-root/r-f-root.component';
 
 @NgModule({
   declarations: [
@@ -67,12 +68,14 @@ import { TDFRootComponent } from './part-18-template-driven-form/t-d-f-root/t-d-
     SecondRoutingComponentComponent,
     ChildAComponent,
     ChildBComponent,
-    TDFRootComponent
+    TDFRootComponent,
+    RFRootComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [LogService],
   bootstrap: [AppComponent]
